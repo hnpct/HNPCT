@@ -5,9 +5,9 @@ if ($conn->connect_error) {
     die("Kết nối thất bại: " . $conn->connect_error);
 }
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $username = $_POST['username'];
-    $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
+if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+    $username = $_GET['username'];
+    $password = password_hash($_GET['password'], PASSWORD_BCRYPT);
 
     $sql = "INSERT INTO users (username, password) VALUES ('$username', '$password')";
 

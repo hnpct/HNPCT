@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const formData = new FormData(loginForm);
 
             fetch('login.php', {
-                method: 'POST',
+                method: 'GET',
                 body: formData
             })
                 .then(response => response.text())

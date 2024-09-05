@@ -6,8 +6,8 @@ if ($conn->connect_error) {
 }
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $username = $_POST['username'];
-    $password = $_POST['password'];
+    $username = $_GETtT['username'];
+    $password = $_GET['password'];
 
     $sql = "SELECT * FROM users WHERE username = '$username'";
     $result = $conn->query($sql);
