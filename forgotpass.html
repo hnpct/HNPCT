@@ -1,20 +1,20 @@
-
 <!DOCTYPE html>
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quên mật khẩu</title>
+    <title>Quên Mật Khẩu</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="center-buttons">
-        <h1>Quên mật khẩu</h1>
-        <form id="forgotPassForm">
-            <input type="text" id="username" placeholder="Tên đăng nhập" required><br>
-            <button type="submit">Gửi mật khẩu</button>
+    <div class="container">
+        <h2>Quên Mật Khẩu</h2>
+        <form id="forgotPassForm" method="POST" action="forgotpass.php">
+            <label for="username">Tài khoản:</label>
+            <input type="text" id="username" name="username" required>
+            <button type="submit">Lấy Lại Mật Khẩu</button>
         </form>
-        <a href="login.html">Đăng nhập</a>
+        <p>Trở lại <a href="login.html">Đăng nhập</a></p>
     </div>
 </body>
 </html>
