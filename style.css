@@ -1,0 +1,52 @@
+
+/* Thiết kế nút bấm màu xanh lá cây */
+button, .button {
+    background-color: #4CAF50; /* Màu xanh lá */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px; /* Bo góc nhẹ cho nút */
+    transition: background-color 0.3s ease; /* Hiệu ứng khi di chuột */
+}
+
+button:hover, .button:hover {
+    background-color: #45a049; /* Màu khi di chuột qua nút */
+}
+
+/* Đặt nút vào giữa */
+.center-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Chiều cao toàn bộ màn hình */
+    flex-direction: column; /* Đặt các nút dọc */
+}
+
+/* Thiết kế cho tiêu đề */
+/* Apply Lobster font to headers */
+h1, h2, h3 {
+    font-family: 'Lobster', cursive;
+    color: #333;
+    font-weight: normal;
+}
+
+
+/* Thêm background */
+body {
+    background-color: #f0f0f0; /* Màu nền */
+    background-image: url('https://4kwallpapers.com/images/walls/thumbs_3t/18274.png'); /* Hình nền công cộng */
+    background-size: cover; /* Để hình nền phủ đầy trang */
+    background-position: center; /* Căn giữa hình nền */
+    background-repeat: no-repeat; /* Không lặp lại hình nền */
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
